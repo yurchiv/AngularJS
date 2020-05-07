@@ -16,7 +16,7 @@ function lController($scope){
 		for (var i = 0; i < menuArr.length; i++) {
 			if ((menuArr[i] != "") && (menuArr[i] != " ")) {
 				ct++;
-				console.log(ct);
+				//console.log(ct);
 			}
 		}
 		displayMessage(ct, $scope);
@@ -24,11 +24,11 @@ function lController($scope){
 }
 
 function displayMessage(count, scp){
-	if(count==0){
-		scp.message = "Please enter data first";
-	}else if(count <= 3){
+	if(count == 0){
+		scp.message = "Please enter data first!";
+	} else if(count <= 3){
 		scp.message = "Enjoy!";
-	}else{
+	} else{
 		scp.message = "Too Much!";
 	}
 }
