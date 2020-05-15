@@ -28,20 +28,23 @@
 	function shopService(){
 		var service = this;
 		service.toBuy = [
-						{name: "Cookies xd",
+						{name: "Cookies",
 						  quantity: 10
 						},
-						{ name: "Apples",
+						{ name: "Milk",
 						  quantity: 3
 						},
-						{ name: "Oreos",
+						{ name: "Oranges",
 						  quantity: 7
 						},
 						{ name: "Snickers",
 						  quantity: 2
 						},
-						{ name: "Peanut Butters",
-						  quantity: 5
+						{ name: "Bread",
+						  quantity: 1
+						},
+						{ name: "Butter",
+						  quantity: 1
 						}, ];
 
 		service.bought = [];
