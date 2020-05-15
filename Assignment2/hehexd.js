@@ -7,15 +7,15 @@
 
 	Controller_1.$inject = ['ShoppingListCheckOffService'];
 	function Controller_1(ShoppingListCheckOffService){
-		var ctrl = this;   //It dont have to be same with ctrl1(in view)
+		var ctrl = this;   
 		ctrl.items = ShoppingListCheckOffService.toBuy;
 
 		ctrl.temp = ShoppingListCheckOffService.bought;
 		ctrl.buyClick = function(item) {
 			var idx = ctrl.items.indexOf(item);
 			ShoppingListCheckOffService.removeNpush(idx, item);
-			console.log(ctrl.items); //Just to demonstrate
-			console.log(ctrl.temp);	 //Just to demonstrate
+			console.log(ctrl.items); 
+			console.log(ctrl.temp);	 
 		};
 	}
 
