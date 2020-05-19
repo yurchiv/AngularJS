@@ -1,0 +1,8 @@
+<div ng-if="founded.length > 0">
+	<li ng-repeat="item in founded">
+		{{ item.short_name }}, {{ item.name }}, {{ item.description }}
+		<button ng-click="remove({myIndex:$index });">Delete This One!</button>
+	</li>
+</div>
+<div ng-if="founded != 'undefined' && founded.length < 1">NOTHING IS FOUND</div>
+
