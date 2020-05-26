@@ -1,0 +1,7 @@
+<div class="categories">
+	<h3 class="cat-header">Categories</h3>
+	<li ng-repeat="category in $ctrl.categories.data">
+		{{ category.short_name }},  {{ category.name }} 
+		<a ui-sref="view1.view2({short_name: category.short_name})">Show Me Details</a>
+	</li>
+</div>

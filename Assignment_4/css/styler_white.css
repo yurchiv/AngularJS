@@ -1,0 +1,30 @@
+body{
+	font-size: 2em;
+	margin: 20px;
+}
+
+
+h1{
+	text-align: center;
+}
+
+.welcome{
+	display: block;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.categories {
+	float: left;
+	margin-right: 30px;
+}
+
+.cat-header{
+	margin-top: 0;
+}
+
+.loading-icon{
+  position: absolute;
+  left: 50%;
+  top: 10px;
+}
